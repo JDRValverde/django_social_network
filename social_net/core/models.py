@@ -11,7 +11,7 @@ class Profile(models.Model):
     id_user = models.IntegerField()
     bio = models.TextField(blank=True)
     profile_image = models.ImageField(
-        upload_to='profile_images', default='blank-profile-picture.png')
+        upload_to='profile_images', default='default_user_image.png')
     location = models.CharField(max_length=120, blank=True)
 
     def __str__(self):
